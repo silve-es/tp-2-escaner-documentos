@@ -150,3 +150,4 @@ pip install -r requirements.txt
 - Ejecutar el escáner
 python -m docscan ruta_entrada.jpg resultado.png --color-mode grayscale
 
+El archivo test_core_custom.py se agregó para verificar de forma específica el funcionamiento interno del núcleo de procesamiento (docscan) y del almacenamiento,y pytest ejecutó los 4 ítems del archivo de pruebas (test_read_photo_invalid_bytes, test_grayscale_filter_behavior, test_threshold_filter_behavior y test_storage_repository_operations) y los cuatro obtuvieron el estado PASSED en un tiempo total de 0.35 segundos.
